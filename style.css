@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+.head{
+    font-family: "Reddit Sans", sans-serif;
+    text-align: center;
+    font-size: 90px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.subhead{
+    font-family: "Reddit Sans", sans-serif;
+    text-align: center;
+}
+
+body{
+    background-image: url("BG.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Reddit Sans", sans-serif;
+    text-align: center;
+}
+
+.green{
+    font-weight: bold;
+    color:darkgreen;
+}
