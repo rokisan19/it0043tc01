@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s ease;
+}
+
+body {
+    background: url(mpe.bg.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 10px;
+    max-width: 100%;
+}
+
+.card {
+    flex: 1 1 calc(25% - 10px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    display: none; 
+}
+
+.card .pokeball {
+    width: 30px;
+    height: 30px;
+    display: none; 
+}
+
+.card .types {
+    display: none; 
+}
+
+.card .types p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.charmander1 { background-color: #F37821; }
+.mew { background-color: #F2C4B4; }
+.snorlax { background-color: #205A9D; }
+.zubat { background-color: #586FE7; }
+.caterpie { background-color: #CA4F9E; }
+.pikachu { background-color: #FCD61B; }
+.squirtle1 { background-color: #85E6D8; }
+.bullbasaur { background-color: #6FDD9B; }
+.psyduck { background-color: #FCD61B; }
+.eevee { background-color: #D0974E; }
+.jigglypuff { background-color: #EDA1CC; }
+.meowth { background-color: #E9E5C6; }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1 1 calc(25% - 10px); 
+}
+
+@media (max-width: 1200px) {
+    .card {
+        flex: 1 1 calc(33.33% - 10px); 
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+        flex: 1 1 calc(50% - 10px); 
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .card {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 20px;
+    }
+    .card p,
+    .card .pokeball,
+    .card .types {
+        display: inline-block;
+    }
+    .card .pokeball {
+        margin-left: auto;
+    }
+    .types {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .card .pokeball {
+        display: none;
+    }
+    .card p,
+    .card .types {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.grass { background-color: #8EDD65; }
+.fire { background-color: #FF6961; }
+.water { background-color: #6495ED; }
+.normal { background-color: #C0C0C0; }
+.electric { background-color: #FFD700; }
+.fairy { background-color: #FFB6C1; }
+.bug { background-color: #7CFC00; }
+.dragon { background-color: #8A2BE2; }
+.poison { background-color: #800080; }
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .card img {
+        width: 50px; 
+        height: auto;
+    }
+
+    .card p {
+        font-size: 1.2rem;
+        color: black; 
+        margin-left: 10px;
+    }
+
+    .pokeball {
+        width: 20px; 
+        height: 20px; 
+        margin-left: auto;
+    }
+
+    .types p {
+        display: inline-block;
+        padding: 5px 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+
+    .types p:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+.card:hover {
+    background-image: url(hover.bg.gif);
+    background-size: cover;
+    background-position: center;
+  }
+  
