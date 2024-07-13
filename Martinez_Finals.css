@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url('overallbackM.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1, h2 {
+    font-family: "Bona Nova SC", serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    padding: 0 2px; 
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-left: 10px; 
+}
+
+.section {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+.home {
+    background: url('backM.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 3em; 
+}
+
+.about {
+    background-color: rgb(96, 41, 96);
+    color: white;
+    padding: 150px;
+}
+
+.about h2{
+    margin-bottom: 10px;
+}
+.about-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.details {
+    margin-left: 20px;
+    max-width: 500px;
+    text-align: left;
+    line-height: 2.0;
+}
+
+.services .service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-container .serv1, .serv2, .serv3, .serv4 {
+    flex: 1 0 200px; 
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-container .serv1:hover, .serv2:hover, .serv3:hover, .serv4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-container .serv1 img, .serv2 img, .serv3 img, .serv4 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service-container .detail {
+    margin-top: 10px;
+}
+
+.service-item img {
+    height: 100px auto;
+}
+
+.card-img {
+    height: 250px;
+    width: 200px;
+}
+
+.news-buttons {
+    margin-top: 10px;
+}
+
+.news-buttons button {
+    background-color: #ff6347;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.news-buttons button:hover {
+    background-color: #e55347;
+}
+
+.news-buttons a {
+    color: white;
+    text-decoration: none;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+
+.portfolio-item:hover {
+    background-color: #5e009d;
+}
+
+.portfolio-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.image-gallery {
+    background: url('backgMM.gif') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+
+.gallery-img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
+}
+
+.contact p {
+    margin: 5px 0;
+    color: white;
+}
+
+.section-faq {
+    background-color: #18181883;
+}
+
+.faq ol {
+    list-style: decimal inside;
+    text-align: left;
+    color: white;
+}
+
+.faq li {
+    margin: 10px 0;
+}
+
+.faq p {
+    color: rgb(232, 105, 15) solid;
+}
+
+.faq a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    .about-info {
+        flex-direction: column;
+    }
+
+    .details {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+
+    .service-container .serv1, .serv2, .serv3, .serv4 {
+        width: 90%;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-img {
+        width: 50%;
+        height: 50%; 
+        margin-bottom: 20px; 
+    }
+}
+
